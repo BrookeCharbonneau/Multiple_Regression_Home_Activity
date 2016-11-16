@@ -1,0 +1,30 @@
+---
+title: "Multiple Regression: Home Activity"
+author: "Brooke Charbonneau"
+date: "November 15, 2016"
+output: pdf_document
+---
+
+```{r,echo=FALSE,message=FALSE, warning=FALSE}
+# Code goes in blocks like this
+
+# load libraries
+library(tidyverse)
+library(apaTables)
+library(predictionInterval)
+
+```
+
+# Question 1
+I examined the extent to which conscientiousness scores, assessment center ratings and graphology ratings each contributed to the prediction of job performance beyond the variance accounted for by general mental ability using a sinlge regression. GMA alone predicted 26 percent of the variance in job performance ratings, R2=.26, 95% CI[.20, .32]. Conscientiousness accounted for an additional 10 percent, sr2=.10, 95% CI[.05, .14], of the variance in job performance ratings beyond GMA alone bringing the total variance accounted for the 36 percent, R2=.36, 95% CI [.29, .41]. Assessment centre ratings account for an additional 2 percent of variance, sr2=.02, 95% CI[-.00, .04], beyond GMA alone bringing the total percent variance accounted for to 28 percent, R2=.28, 95% CI [.21, .34]. Graphology accounted for no additional variance in job performance ratings beyond GMA, sr2=.00, 95% CI [-.00, .00]. Consequently, if GMA and only one other predictor can be used, I suggest using GMA and conscientiousness to predict ratings of job performance.
+
+# Question 2
+I examined the extent to which conscientiousness scores, assessment center ratings and graphology ratings each contributed to the prediction of job performance beyond the variance accounted for by general mental ability using a sinlge regression. GMA alone predicted 26 percent of the variance in job performance ratings, R2=.26, F(1,498)=175.1, p<.001.
+
+Conscientiousness accounted for an additional 10 percent, sr2=.10, 95% CI[.05, .14], of the variance in job performance ratings beyond GMA alone bringing the total variance accounted for the 36 percent, R2=.36, 95% CI [.29, .41]. Assessment centre ratings account for an additional 2 percent of variance, sr2=.02, 95% CI[-.00, .04], beyond GMA alone bringing the total percent variance accounted for to 28 percent, R2=.28, 95% CI [.21, .34]. Graphology accounted for no additional variance in job performance ratings beyond GMA, sr2=.00, 95% CI [-.00, .00]. Consequently, if GMA and only one other predictor can be used, I suggest using GMA and conscientiousness to predict ratings of job performance.
+
+# Question 3
+The confidence interval for the predicted performance scores at the mean GMA and mean conscientiousness is 101, 95% CI [100.28, 101.72].
+
+#Question 3
+The prediction interval for the predicted performance scores at the mean GMA and mean conscientiousness is 101, 95% PI [84.87, 117.13]. 
